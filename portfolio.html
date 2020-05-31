@@ -38,19 +38,18 @@
         <div class="contacts">
           <ul class="contact-nav list">
             <li class="item">
-              <img
-                src="./images/envelope.svg"
-                alt="конверт"
-                class="nav-image"
-              />
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="nav-image" width="16" height="11">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
 
             <li class="item">
-              <img src="./images/phone.svg" alt="смартфон" class="nav-image" />
               <a href="callto:+38 096 111 11 11" class="link"
+                ><svg class="nav-image" width="10" height="15">
+                  <use href="./images/sprite.svg#phone"></use></svg
                 >+38 096 111 11 11</a
               >
             </li>
@@ -62,12 +61,12 @@
     <main>
       <div class="container">
         <section class="main-section">
-          <h1 class="hidden-title">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio-list">
             <li class="unit">
               <button class="button-primary" type="button">Все</button>
             </li>
-            <li>
+            <li class="unit">
               <button class="button-primary" type="button">Веб-сайты</button>
             </li>
             <li class="unit">
@@ -281,46 +280,37 @@
           <p class="footer-text"><b>Присоединяйтесь</b></p>
           <ul class="logos-list">
             <li class="logo-img">
-              <a href="" aria-label="link to Instagram"></a>
-              <img
-                class="logos"
-                src="./images/insta1.svg"
-                alt="логотип Instagram"
-              />
+              <a href="" aria-label="link to Instagram"><svg class="logos" width="20px" height="20px">
+                  <use href=./images/sprite.svg#insta1></use> 
+                </svg></a>
             </li>
 
             <li class="logo-img">
-              <a href="" aria-label="link to Twitter"></a>
-              <img
-                class="logos"
-                src="./images/twitter1.svg"
-                alt="логотип Twitter"
-              />
+              <a href="" aria-label="link to Twitter"><svg class="logos" width="20px" height="20px">
+                  <use href=./images/sprite.svg#twitter1></use> 
+                </svg></a>
             </li>
 
             <li class="logo-img">
-              <a href="" aria-label="link to Facebook"></a>
-              <img
-                class="logos"
-                src="./images/facebook1.svg"
-                alt="логотип Facebook"
-              />
+              <a href="" aria-label="link to Facebook"><svg class="logos" width="20px" height="20px">
+                  <use href=./images/sprite.svg#facebook1></use> 
+                </svg></a>
             </li>
 
             <li class="logo-img">
-              <a href="" aria-label="link to LinkedIn"></a>
-              <img
-                class="logos"
-                src="./images/Linkedin1.svg"
-                alt="логотип LinkedIn"
-              />
+              <a href="" aria-label="link to LinkedIn"><svg class="logos" width="20px" height="20px">
+                  <use href=./images/sprite.svg#Linkedin1></use> 
+                </svg></a>
             </li>
+
           </ul>
         </div>
 
         <div>
           <p class="footer-text"><b>Подпишитесь на рассылку</b></p>
-          <a href="" class="button-secondary">Подписаться</a>
+          <a href="" class="icon-send"> Подписаться <svg class="submit" width="24px" height="24px">
+                  <use href=./images/sprite.svg#send></use> 
+                </svg></a>
         </div>
       </div>
       <p class="copyright">2020 | Developed by GoIT Students</p>

@@ -53,6 +53,24 @@
   text-align: center;
 }
 
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: flex;
+  min-width: 200px;
+
+  background-color: var(--accent);
+  color: var(--white-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -159,14 +177,14 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.team-list .name {
+.member .name {
   margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-align: center;
 }
 
@@ -198,12 +216,19 @@
   height: 44px;
 }
 
+.logo-list .icon-logo:hover,
+.logo-list .icon-logo:focus {
+  --color1: var(--white-text-color);
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
 /* Clients */
 .clients-list {
   display: flex;
 }
 
-.client-img {
+.link-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,34 +238,12 @@
   border-radius: 4px;
 }
 
-.client-img:hover .client-img:focus {
-  color: var(--accent);
+.client-img .link-icon:hover,
+.client-img .link-icon:focus {
+  --color4: var(--accent);
+  border-color: var(--accent);
 }
 
 .clients-list .client-img:not(:last-child) {
   margin-right: 30px;
-}
-
-/* Button */
-
-.button {
-  border-radius: 4px;
-  padding: 10px 32px;
-  display: inline-block;
-  min-width: 200px;
-
-  background-color: var(--accent);
-  color: var(--white-text-color);
-  font-family: Roboto, sans-serif;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.button:hover,
-.button:focus {
-  cursor: pointer;
 }
