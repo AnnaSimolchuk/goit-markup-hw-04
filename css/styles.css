@@ -78,17 +78,6 @@
 
 /* Section Benefits*/
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0px;
-  padding: 0px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .benefits {
   display: flex;
   margin-top: 94px;
@@ -121,11 +110,6 @@
   margin-right: 30px;
 }
 
-.benefit {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .text {
   margin-top: 0;
   margin-bottom: 0;
@@ -162,10 +146,17 @@
 }
 .team-list {
   display: flex;
+  padding-bottom: 94px;
 }
 
-.team-list .list:not(:last-child) {
+.team-list .member:not(:last-child) {
   margin-right: 30px;
+}
+
+.member {
+  background: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .name {
@@ -191,11 +182,20 @@
 
 .logo-list {
   display: flex;
-  width: 207px;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
-.team-list .list-logo:not(:last-child) {
-  margin: 0px 10px 24px;
+.team-list .icon-logo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 }
 
 /* Clients */
