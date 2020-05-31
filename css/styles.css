@@ -186,11 +186,11 @@
   margin-bottom: 24px;
 }
 
-.team-list .icon-logo:not(:last-child) {
+.logo-list .icon-logo:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-logo {
+.logo-list .icon-logo {
   display: inline-flex;
   justify-content: center;
   align-items: center;
