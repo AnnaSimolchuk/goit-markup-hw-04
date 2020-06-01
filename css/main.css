@@ -37,6 +37,10 @@ a {
   text-decoration-line: none;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
